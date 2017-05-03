@@ -43,17 +43,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login']))
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Gnooble: Login</title>
+	<title>CodeX: Login</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	
+
 </head>
 <body class="gatekeeper">
 	<div class="container-fluid">
         <!-- action="/login/-->
-		<form method="post" action="login/" class="clearfix col-xs-4 login-form center-block pull-none entry-form">
-		  <h1 class="page-header">Gnooble</h1>
+		<form method="post" class="clearfix col-xs-4 login-form center-block pull-none entry-form">
+        <h1 class="page-header"><a href="../index.php">CodeX</a></h1>
 		  <a href="../register" class="link pull-right">Create a new account</a>
 		  <h3>Login</h3>
             <?php if (!empty($status) && isset($status)): ?>
@@ -77,7 +77,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login']))
 		  
 		</form>
 	</div>
-	
+	<footer class="footer text-center">
+      <div class="container-fluid">
+         <h3>We are still in Aplha and growing fast.</h3>
+         <p>As we're still in Aplha, you might run into bugs occasionally. Please report any bugs to us immediately.</p>
+         <p>Got any feedback? Suggestions? Criticisms? We want to hear from you. <a href="mailto:vpenugonda@student.fairfield.edu">Send us a mail</a></p>
+
+      </div>
+      <div class="founders">
+         <ul class="text-center list-unstyled list-inline">
+            <li>Built by: </li>
+            <li><a href="#/">Mr. Raja Sai</a></li>
+            <li><a href="#/">Talloju Nikhil</a></li>
+            <li><a href="http://vpenugonda.github.io/">Sid</a></li>
+         </ul>
+         <ul class="text-center list-unstyled list-inline">
+            <li> In love with - </li>
+            <li> HTML5, CSS, JavaScript, bootstrap, <strong>Functional Programming </strong></li>
+         </ul>
+      </div>
+   </footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="../assets/js/bootstrap.min.js"></script>

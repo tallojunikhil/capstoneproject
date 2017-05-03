@@ -10,6 +10,8 @@ include '../classes/student.php';
 
 include '../views/template_header.php';
 ?>
+
+<div class="container" style="margin-top:20px">
 		  <h1 class="page-header">Home</h1>
 		  <p class="lead">Welcome Aboard!</p>
 
@@ -31,7 +33,7 @@ include '../views/template_header.php';
 				 </div>
 			  </div>
 		   </div>
-
+</div>
 <?php
 include '../views/template_footer.php';
 ?>

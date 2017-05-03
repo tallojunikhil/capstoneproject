@@ -2,7 +2,7 @@
 
  include '../includes/Authenticate.php';
  include '../classes/User.php';
- include '../include/Database.php';
+//  include '../include/Database.php';
 
 
 if ($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['submit']))
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['submit']))
 				elseif ($isRegistrationSuccessful === DatabaseManager::INSERT_SUCCESS)
 				{
 					if (Authenticate::login($emailid,$password))
-						Authenticate::redirect();
+							Authenticate::redirect();
 				}
 
 				else
@@ -55,17 +55,18 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['submit']))
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Code<u>X</u>: Register</title>
+	<title>CodeX: Register</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/css/main.css">
+
 </head>
 <body class="gatekeeper">
-	<div class="container">
-		
 
-	   <form action="/register/" method="post" class="form-horizontal col-xs-6 center-block register-form pull-none entry-form">
-		  <h1 class="page-header">Code<u>X</u></h1>
+	<div class="container-fluid">
+
+	   <form method="post" class="form-horizontal col-xs-5 center-block register-form pull-none entry-form">
+		  <h1 class="page-header"><a href="../index.php">CodeX</a></h1>
 		  
 		  <h3>Register with an account. <br><small>Its free!</small></h3>
             <?php if(isset($status) && isset($_POST['submit'])): ?>
@@ -94,13 +95,13 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['submit']))
 		    </div>
 		  </div>
 		  <div class="form-group">
-		    <label for="input-dept" class="col-sm-4 control-label">Stream</label>
+		    <label for="input-dept" class="col-sm-4 control-label">Department</label>
 		    <div class="col-sm-8">
 		    	<select required name="department" id="input-dept" class="form-control">
-                   <option value="SE">Software Engineering</option>
-                   <option value="CSE">Computer Science Engineering</option>
-                   <option value="IT">Information Technology</option>
-					</select>
+		    			<option value="SE">Software Engineering</option>
+							<option value="CSE">Computer Science</option>              
+							<option value="IT">Information Technology</option>
+		    	</select>
 		    </div>
 		  </div>
 		  <div class="form-group">
@@ -126,7 +127,28 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['submit']))
 
 		</form>
 	</div>
-	
+    <br>
+
+	<footer class="footer text-center">
+      <div class="container-fluid">
+         <h3>We are still in Aplha and growing fast.</h3>
+         <p>As we're still in Aplha, you might run into bugs occasionally. Please report any bugs to us immediately.</p>
+         <p>Got any feedback? Suggestions? Criticisms? We want to hear from you. <a href="mailto:vpenugonda@student.fairfield.edu">Send us a mail</a></p>
+
+      </div>
+      <div class="founders">
+         <ul class="text-center list-unstyled list-inline">
+            <li>Built by: </li>
+            <li><a href="#/">Mr. Raja Sai</a></li>
+            <li><a href="#/">Talloju Nikhil</a></li>
+            <li><a href="http://vpenugonda.github.io/">Sid</a></li>
+         </ul>
+         <ul class="text-center list-unstyled list-inline">
+            <li> In love with - </li>
+            <li> HTML5, CSS, JavaScript, bootstrap, <strong>Functional Programming </strong></li>
+         </ul>
+      </div>
+   </footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="../assets/js/bootstrap.min.js"></script>

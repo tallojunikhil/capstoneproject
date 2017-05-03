@@ -5,14 +5,14 @@ include '../../includes/Authenticate.php';
 include '../../classes/student.php';
 
 if(!isset($_SESSION['allow']) || $_SESSION['allow'] === "false" ){
-	header('Location: http://'.$_SERVER['SERVER_NAME'].'/login/');
+	header('Location: http://'.$_SERVER['SERVER_NAME'].'/CodeX/login/');
 	exit(0); }
 
 
 //check whether the user is logged in or not,
 Authenticate::preventUnauthorisedLogin();
 $queryResult = Student::viewChallenges();
-date_default_timezone_set('Asia/Kolkata');
+date_default_timezone_set('America/New_York');
 $currentTime = new DateTime();
 $startTime = new DateTime();
 $endTime = new DateTime();

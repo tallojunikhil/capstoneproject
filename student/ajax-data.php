@@ -4,7 +4,7 @@ session_start();
 	// Connect to database
 	if (isset($_POST['secureId']) && !empty($_POST['secureId']))
 	{
-			if($_POST['secureId'] === 'gnooble2015')
+			if($_POST['secureId'] === 'CodeX2015')
 			{
 				$_SESSION['allow']= "true";
 				echo "true";

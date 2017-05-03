@@ -37,7 +37,7 @@ if (!empty($_POST['sourcecode']))
 }
 else
 {
-	$qstring = "gnooble.org/admin/editor/editor.php?id=".$_GET['qid'];
+	$qstring = "CodeX.org/admin/editor/editor.php?id=".$_GET['qid'];
 	header($qstring);
 	exit();
 

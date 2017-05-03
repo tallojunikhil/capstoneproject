@@ -23,7 +23,7 @@ $queryResult = Student::getQuestionsSolved($_SESSION['userid']);
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Gnooble: Student</title>
+    <title>CodeX: Student</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -51,7 +51,7 @@ $queryResult = Student::getQuestionsSolved($_SESSION['userid']);
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Gnooble</a>
+            <a class="navbar-brand" href="#">CodeX</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

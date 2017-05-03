@@ -43,7 +43,7 @@ if (!empty($_POST['sourcecode']))
 }
 else
 {
-	$qstring = "gnooble.org/student/practice/editor/editor.php?id=".$_GET['qid'];
+	$qstring = "CodeX.org/student/practice/editor/editor.php?id=".$_GET['qid'];
 	header($qstring);
 	exit();
 
@@ -89,7 +89,7 @@ $avgTime = $avgTime/$index;
 $compilerOutput["compilationMessage"] = $result->getCompileMessage();
 $compilerOutput["compilationResult"] = $jsonOutput;
 $isSolved = Student::isSolvedQuestion($_SESSION['userid'],$_GET['qid']);
-date_default_timezone_set('Asia/Kolkata');
+date_default_timezone_set('America/New_York');
 $solvedTime = date('Y-m-d H:i:s');
 if ($areAllPassed)
 {

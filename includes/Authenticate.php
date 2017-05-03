@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * User: Diljit Ramachandran
+ * Date: 6/1/15
+ * Time: 1:57 PM
+ * Last Modified : 19th Jan,2015
+ */
 session_start();
 include 'Database.php';
 
@@ -43,18 +48,18 @@ class Authenticate
         //redirect to the admin if the userType is admin else to student if the user type is user
         //redirect to student.php if the user is a student else welcome.php for teachers
         if (self::getUserType() === "STUDENT") {
-            header('Location: http://'.$_SERVER['SERVER_NAME'].'/student/');
+            header('Location: http://'.$_SERVER['SERVER_NAME'].'/CodeX/student/');
             exit(0);
             return;
         }
         else if (self::getUserType() === "ADMIN")
         {
-            header('Location: http://'.$_SERVER['SERVER_NAME'].'/admin/');
+            header('Location: http://'.$_SERVER['SERVER_NAME'].'/CodeX/admin/');
             exit(0);
             return;
         }
         else {
-            header('Location: http://'.$_SERVER['SERVER_NAME'].'/login/');
+            header('Location: http://'.$_SERVER['SERVER_NAME'].'/CodeX/login/');
             exit(0);
             return;
         }
@@ -82,7 +87,7 @@ class Authenticate
         session_start();
         session_destroy();
         $_SESSION = array();
-        header('Location: http://'.$_SERVER['SERVER_NAME'].'/login/');
+        header('Location: http://'.$_SERVER['SERVER_NAME'].'/codex/login/');
         exit(0);
     }
 

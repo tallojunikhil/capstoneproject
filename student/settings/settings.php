@@ -42,11 +42,9 @@ include '../../views/template_header.php';
                              <label for="input-dept">Department</label>
                              <div>
                                 <select required name="department" id="input-dept" class="form-control">
-                                   <option value="CSE">Computer Science</option>
-                                   <option value="EE">Electrical Engineering</option>
-                                   <option value="ECE">Electronics Engineering</option>
-                                   <option value="IT">Information Technology</option>
-                                   <option value="FT">Food Technology</option>
+                                    <option value="SE">Software Engineering</option>
+                                    <option value="CSE">Computer Science</option>              
+                                    <option value="IT">Information Technology</option>
                                 </select>
                              </div>
                           </div>

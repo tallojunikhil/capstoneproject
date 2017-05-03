@@ -22,7 +22,7 @@ if (Authenticate::getUserType() != "STUDENT")
 		$queryResult = Student::getQuestion($_GET['id']);
         //$isSourceCodeAvailable = Student::getSourceCode($_SESSION['userid'],$_GET['id']);
 
-		date_default_timezone_set('Asia/Kolkata');
+		date_default_timezone_set('America/New_York');
 		$attemptedTime = date('Y-m-d H:i:s');
 		$endTime = '0000-00-00 00:00:00';
 
@@ -40,7 +40,7 @@ if (Authenticate::getUserType() != "STUDENT")
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Gnooble: Student</title>
+	<title>CodeX: Student</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../../assets/css/main.css">
@@ -178,7 +178,7 @@ if (Authenticate::getUserType() != "STUDENT")
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Gnooble</a>
+			<a class="navbar-brand" href="#">CodeX</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->

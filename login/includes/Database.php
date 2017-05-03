@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Created by PhpStorm.
+ * User: diljit
+ * Date: 22/1/15
+ * Time: 10:14 AM
+ */
 include '_config.php';
 
 class DatabaseManager

@@ -23,11 +23,21 @@ $queryResult = Student::getQuestionsSolved($_SESSION['userid']);
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Gnooble: Student</title>
+    <title>CodeX: Student</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
-    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-59768309-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
 </head>
 <body>
 
@@ -41,7 +51,7 @@ $queryResult = Student::getQuestionsSolved($_SESSION['userid']);
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Gnooble</a>
+            <a class="navbar-brand" href="#">CodeX</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,7 +66,7 @@ $queryResult = Student::getQuestionsSolved($_SESSION['userid']);
                         <li><a href="#">Settings</a></li>
                         <li><a href="#">Scoreboard</a></li>
                         <li class="divider"></li>
-                        <li><a href="../../logout/">Logout</a></li>
+                        <li><a href="../logout/">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -84,7 +94,7 @@ $queryResult = Student::getQuestionsSolved($_SESSION['userid']);
                     <img class="user-img pull-left img-rounded img-responsive col-md-4 col-sm-4 col-xs-4" src="https://cdn2.iconfinder.com/data/icons/flat-style-svg-icons-part-2/512/hacker_user_thief_spy_skull-512.png" alt="Sougata Nair"/>
 
                     <div class="user-info pull-left col-md-7 col-md-7 col-xs-7">
-                        <h2><strong>Sougata Nair</strong></h2>
+                        <h2><strong>Administrator</strong></h2>
                         <p class="meta streak"><strong>Highest Streak: </strong>8 days</p>
 
 

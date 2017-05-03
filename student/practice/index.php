@@ -13,6 +13,7 @@
 <?php
 include '../../views/template_header.php';
 ?>
+
 <div class="page-header clearfix">
    <h1 class="pull-left">Practice</h1>
    <form class="form-inline pull-right prc-search" action="" method="post">
@@ -78,6 +79,6 @@ include '../../views/template_header.php';
 
 
 
-			<?php
-			include '../../views/template_footer.php';
-			?>
+<?php
+include '../../views/template_footer.php';
+?>

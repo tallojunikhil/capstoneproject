@@ -11,6 +11,7 @@
 
 ?>
 <?php
+
 include '../../views/template_header.php';
 ?>
 

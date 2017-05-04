@@ -41,6 +41,7 @@ Authors:
 * [Siddhartha Penugonda](vpenugonda.github.io)
 * [Nikhil Talloju](#)
 * [Raja Sai Nakka](#)
+
 Roadmap for next release:
 ===========================
 * Create dynamic judge for personal use with custom domain name
